@@ -65,5 +65,7 @@ int main()
   }
 
   double total = cost + shippingFee;
-  double rounded = static_cast<int>(money * 100) / 100.0;
+  double rounded_fee = static_cast<int>(total * 100) / 100.0;
+
+  cout << "Total is: " << rounded_fee << endl;
 }
