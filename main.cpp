@@ -62,7 +62,7 @@ int main()
         skip = true;
       }
       else{
-        cout << "Bad input";
+        cout << "Bad Input";
         skip = true;
       }
     }
@@ -75,6 +75,6 @@ int main()
     }
   }
   else{
-    cout << "Bad input" << endl;
+    cout << "Bad Input" << endl;
   }
 }
