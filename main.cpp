@@ -2,7 +2,11 @@
 
 using namespace std;
 
+double getShippingCost(int method, double orderCost){
+  
+}
+
 int main()
 {
-  cout << "Hello world" << endl;
+  
 }
