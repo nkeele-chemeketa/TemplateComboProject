@@ -3,7 +3,7 @@
 using namespace std;
 
 /**
- * @brief Get the Shipping Cost of 
+ * @brief Get the Shipping Cost of order
  * 
  * @param method 
  * @param orderCost 
