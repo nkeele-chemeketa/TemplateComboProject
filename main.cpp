@@ -57,7 +57,13 @@ int main()
 
   if (shippingFee == -1){
     if (method == 1 && cost < 100){
-      
+      cout << "Not available";
+    }
+    else{
+      cout << "Bad input";
     }
   }
+
+  double total = cost + shippingFee;
+  double rounded = static_cast<int>(money * 100) / 100.0;
 }
