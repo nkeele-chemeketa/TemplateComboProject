@@ -53,5 +53,9 @@ int main()
   cout << "Enter your shipping method: ";
   cin >> method;
 
-  
+  double shippingFee = getShippingCost(method, cost);
+
+  if (shippingFee == -1){
+
+  }
 }
