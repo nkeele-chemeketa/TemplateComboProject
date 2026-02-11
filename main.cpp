@@ -2,6 +2,13 @@
 
 using namespace std;
 
+/**
+ * @brief Get the Shipping Cost of 
+ * 
+ * @param method 
+ * @param orderCost 
+ * @return double 
+ */
 double getShippingCost(int method, double orderCost){
   if (method == 1){
     if (orderCost < 100){
