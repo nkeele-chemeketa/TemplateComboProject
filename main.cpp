@@ -24,7 +24,21 @@ double getShippingCost(int method, double orderCost){
     }
   }
 
+  else if (method == 3){
+    if (orderCost < 35){
+      return 5;
+    }
+    else if (orderCost < 100){
+      return 8;
+    }
+    else{
+      return 0;
+    }
+  }
   
+  else{
+    return -1;
+  }
 
 }
 
