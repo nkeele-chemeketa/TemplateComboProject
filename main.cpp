@@ -46,6 +46,7 @@ int main()
 {
   double cost;
   int method;
+  bool skip = false;
 
   cout << "Enter the cost of your order: ";
   cin >> cost;
@@ -58,14 +59,18 @@ int main()
   if (static_cast<int>(shippingFee) == -1){
     if (method == 1 && cost < 100){
       cout << "Not available";
+      skip = true;
     }
     else{
       cout << "Bad input";
+      skip = true;
     }
   }
 
   double total = cost + shippingFee;
   double rounded_fee = static_cast<int>(total * 100) / 100.0;
 
-  cout << "Total is: " << rounded_fee << endl;
+  if (!skip){
+    cout << "Total is: " << rounded_fee << endl;
+  }
 }
