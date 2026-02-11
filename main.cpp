@@ -48,5 +48,10 @@ int main()
   int method;
 
   cout << "Enter the cost of your order: ";
-  cout 
+  cin >> cost;
+
+  cout << "Enter your shipping method: ";
+  cin >> method;
+
+  
 }
