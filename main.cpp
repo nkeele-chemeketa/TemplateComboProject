@@ -47,5 +47,6 @@ int main()
   double cost;
   int method;
 
-  cout << "Enter the cost of your order: "
+  cout << "Enter the cost of your order: ";
+  cout 
 }
