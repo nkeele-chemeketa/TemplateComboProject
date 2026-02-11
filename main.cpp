@@ -56,6 +56,8 @@ int main()
   double shippingFee = getShippingCost(method, cost);
 
   if (shippingFee == -1){
-
+    if (method == 1 && cost < 100){
+      
+    }
   }
 }
