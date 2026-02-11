@@ -71,6 +71,6 @@ int main()
   double rounded_fee = static_cast<int>(total * 100) / 100.0;
 
   if (!skip){
-    cout << "Total is: " << rounded_fee << endl;
+    cout << "Total is $" << rounded_fee << endl;
   }
 }
