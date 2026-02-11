@@ -54,7 +54,7 @@ int main()
   cout << "Enter your shipping method: ";
   cin >> method;
 
-  if (cost > 0){
+  if (cost >= 0){
     double shippingFee = getShippingCost(method, cost);
     if (static_cast<int>(shippingFee) == -1){
       if (method == 1 && cost < 100){
