@@ -44,5 +44,8 @@ double getShippingCost(int method, double orderCost){
 
 int main()
 {
-  
+  double cost;
+  int method;
+
+  cout << "Enter the cost of your order: "
 }
