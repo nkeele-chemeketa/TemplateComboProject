@@ -5,6 +5,11 @@ using namespace std;
 /**
  * @brief Get the Shipping Cost of order
  * 
+ * shipping methods:
+ * 1 = drone
+ * 2 = 2-day
+ * 3 = standard
+ * 
  * @param method 
  * @param orderCost 
  * @return double 
