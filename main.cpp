@@ -12,8 +12,10 @@ using namespace std;
  * 
  * @param method int representing the shipping method
  * @param orderCost cost of the order
- * @return double 
+ * @return shipping cost as double, or -1 if method is not 1, 2, or 3, 
+ *              or if drone delivery selected when ordercost < 100
  */
+
 double getShippingCost(int method, double orderCost){
   if (method == 1){
     if (orderCost < 100){
