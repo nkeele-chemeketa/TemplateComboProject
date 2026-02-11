@@ -54,23 +54,23 @@ int main()
   cout << "Enter your shipping method: ";
   cin >> method;
 
-  double shippingFee = getShippingCost(method, cost);
-
-  if (static_cast<int>(shippingFee) == -1){
-    if (method == 1 && cost < 100){
-      cout << "Not available" << endl;
-      skip = true;
+  if (cost < 0){}
+    double shippingFee = getShippingCost(method, cost);
+    if (static_cast<int>(shippingFee) == -1){
+      if (method == 1 && cost < 100){
+        cout << "Not available" << endl;
+        skip = true;
+      }
+      else{
+        cout << "Bad input";
+        skip = true;
+      }
     }
-    else{
-      cout << "Bad input";
-      skip = true;
+
+    double total = cost + shippingFee;
+    double rounded_fee = static_cast<int>(total * 100) / 100.0;
+
+    if (!skip){
+      cout << "Total is $" << rounded_fee << endl;
     }
-  }
-
-  double total = cost + shippingFee;
-  double rounded_fee = static_cast<int>(total * 100) / 100.0;
-
-  if (!skip){
-    cout << "Total is $" << rounded_fee << endl;
-  }
 }
