@@ -3,3 +3,6 @@
 
 using doctest::Approx;
 
+TEST_CASE("Samples"){
+  
+}
