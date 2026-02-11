@@ -10,8 +10,8 @@ using namespace std;
  * 2 = 2-day
  * 3 = standard
  * 
- * @param method 
- * @param orderCost 
+ * @param method int representing the shipping method
+ * @param orderCost cost of the order
  * @return double 
  */
 double getShippingCost(int method, double orderCost){
