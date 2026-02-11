@@ -58,7 +58,7 @@ int main()
 
   if (static_cast<int>(shippingFee) == -1){
     if (method == 1 && cost < 100){
-      cout << "Not available";
+      cout << "Not available" << endl;
       skip = true;
     }
     else{
